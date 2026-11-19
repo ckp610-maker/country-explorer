@@ -1,0 +1,142 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  padding: 30px 6%;
+}
+
+header {
+  background: linear-gradient(120deg, #123b70, #2876b9);
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+header p {
+  font-size: 17px;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+input, select {
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+}
+
+input {
+  flex: 1;
+}
+
+select {
+  min-width: 150px;
+}
+
+.count {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 3px 12px #00000010;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #00000020;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #123b70;
+}
+
+.card p, .details p {
+  margin: 9px 0;
+  color: #475569;
+}
+
+button {
+  background: #1d65a6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+button:hover {
+  background: #123b70;
+}
+
+.details {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+.details img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  margin: 25px 0;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 27px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+}
